@@ -45,3 +45,4 @@ app.use(
     AuthMiddleware.hasRole(["admin", "user"]),
     userRoutes
   );
+app.use("/api/v1/", authRoutes);
